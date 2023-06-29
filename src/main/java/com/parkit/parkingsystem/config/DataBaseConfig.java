@@ -12,7 +12,7 @@ public class DataBaseConfig {
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         logger.info("Create DB connection");
         Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql:///Users/maxime/IdeaProjects/openclassrooms/parkingsystem/resources:3306/prod","root","mysqlmaxime");
+        return DriverManager.getConnection("jdbc:mysql:///Users/maxime/IdeaProjects/openclassrooms/parkingsystem/resources/prod","root","mysqlmaxime");
     }
 
     public void closeConnection(Connection con){
